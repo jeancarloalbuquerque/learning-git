@@ -94,3 +94,25 @@ Changes to be committed:
 ```
 
 Agora as modificações do arquivo `CONTRIBUTING.md` estão prontas para entrarem no próximo `git commit`.
+
+5. **Ignorando arquivos**
+
+É comum que seu projeto tenha arquivos que você não deseje versionar, como arquvios de variáveis de ambiente, arquivos de armazenamento, entre outros. Nesses casos, você pode criar um arquivo nomeado `.gitignore` contendo uma lista de padrões de nomes de arquivos a serem ignorados pelo git.
+
+Um Exemplo de arquivo `.gitignore`:
+
+```bash
+cat .gitignore
+*.[oa]
+*~
+```
+
+Nesse casso, todos os arquivos que terminem com `.o`, `.a` ou `~`.
+
+As regras para os padrões que podem ser usados no arquivo .gitignore são as seguintes:
+
+- Linhas em branco ou começando com `#` são ignoradas.
+- Os padrões que normalmente são usados para nomes de arquivos funcionam.
+- Você pode iniciar padrões com uma barra `/` para evitar recursividade.
+- Você pode terminar padrões com uma barra `/` para especificar um diretório.
+- Você pode negar um padrão ao fazê-lo iniciar com um ponto de exclamação `!`.
