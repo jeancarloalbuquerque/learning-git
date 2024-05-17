@@ -34,3 +34,17 @@ git clone https://github.com/git/git
 ```
 
 Esse comando iniciará um diretório ```.git``` e fará a cópia completa de todo o versionamento do código no servidor. Dessa forma, caso o servidor seja corrompido, qualquer das duas versões, cliente ou servidor, poderá ser usada para restaurar o projeto.
+
+3. **Fluxo de trabalho do Git**
+
+Seus arquivos podem estar em um dos seguintes casos:
+
+- Não rastreado (**Untracked**)
+- Rastreado
+    - Não modificados (**Unmodified**)
+    - Modificados (**Modified**)
+    - Preparados (**Staged**)
+
+A imagem a seguir mostra o fluxo de estados que os arquivos do seu projeto podem percorrer.
+
+![](https://git-scm.com/book/en/v2/images/lifecycle.png)
