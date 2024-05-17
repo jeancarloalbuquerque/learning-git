@@ -116,3 +116,11 @@ As regras para os padrões que podem ser usados no arquivo .gitignore são as se
 - Você pode iniciar padrões com uma barra `/` para evitar recursividade.
 - Você pode terminar padrões com uma barra `/` para especificar um diretório.
 - Você pode negar um padrão ao fazê-lo iniciar com um ponto de exclamação `!`.
+
+6. **Fazendo commit das suas alterações**
+
+Depois de preparar suas alterações basta digitar o comando:
+
+```bash
+git commit -m 'Meu primeiro commit!'
+```
