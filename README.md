@@ -124,3 +124,30 @@ Depois de preparar suas alterações basta digitar o comando:
 ```bash
 git commit -m 'Meu primeiro commit!'
 ```
+
+7. **Desfazendo alterações**
+
+Para refazer o último commit use o comando:
+
+```bash
+git commit-- amend
+
+# Exemplo
+git commit -m 'Initial commit'
+git add forgotten_file
+git commit --ammend
+```
+
+Para retirar um arquivo preparado (STAGED) use o comando:
+
+```bash
+git reset HEAD file_to_remove
+```
+
+Para descartar as modificações de um arquivo, use o comando:
+
+```bash
+git checkout -- file_to_discart_changes
+```
+
+[next >>](https://git-scm.com/book/pt-br/v2/Fundamentos-de-Git-Trabalhando-de-Forma-Remota)
